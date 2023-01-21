@@ -130,9 +130,9 @@ h6 {
 .btn-solid-lg {
     display: inline-block;
     padding: 1.625rem 2.75rem 1.625rem 2.75rem;
-    border: 1px solid #594cda;
+    border: 1px solid #3ABDB7;
     border-radius: 32px;
-    background-color: #594cda;
+    background-color: #3ABDB7;
     color: #ffffff;
     font-weight: 600;
     font-size: 0.875rem;
@@ -145,9 +145,9 @@ h6 {
 }
 
 .btn-solid-lg:hover {
-    border: 1px solid #594cda;
+    border: 1px solid #3ABDB7;
     background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
+    color: #3ABDB7; /* needs to stay here because of the color property of a tag */
     text-decoration: none;
 }
 
@@ -573,7 +573,7 @@ input[type="checkbox"] {
 /*    Header     */
 /*****************/
 .header {
-    background: linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1));
+    background: linear-gradient(#BAFFFC, rgba(255, 255, 255, 1));
 }
 
 /********************/
