@@ -501,7 +501,7 @@ input[type="checkbox"] {
 .dropdown.show > a,
 .nav-link:hover,
 .nav-link.active {
-    color: #ff6e84;
+    color: #3ABDB7;
     text-decoration: none;
 }
 
@@ -580,9 +580,10 @@ input[type="checkbox"] {
 /*     Features     */
 /********************/
 .cards-1 {
-    padding-top: 4rem;
+    padding-top: 12rem;
     padding-bottom: 1.5rem;
     text-align: center;
+    height: 50%;
 }
 
 .cards-1 .card {
@@ -591,6 +592,7 @@ input[type="checkbox"] {
     border: none;
     border-radius: 16px;
     background-color: #f1f9fc;
+    height: 400px;
 }
 
 .cards-1 .card-image {

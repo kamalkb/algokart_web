@@ -15,156 +15,6 @@
         <link href="css/swiper.css" rel="stylesheet" />
         <link href="css/magnific-popup.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            .container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-            .nav-link {
-    display: block;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
-    color: #6b747b;
-    text-decoration: none;
-    line-height: 0.875rem;
-    transition: all 0.2s ease;
-}
-
-.header {
-    background: linear-gradient(rgba(197, 234, 249, 1), rgba(255, 255, 255, 1));
-}
-
-h1 {
-    color: #252c38;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3.125rem;
-    letter-spacing: -0.5px;
-}
-
-.h1-large {
-    font-size: 2.875rem;
-    line-height: 3.5rem;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: #ff6e84;
-    text-decoration: none;
-}
-
-.navbar.top-nav-collapse {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        background-color: #f1f9fc;
-    }
-    .p-large {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-}
-
-.btn-solid-lg {
-    display: inline-block;
-    padding: 1.625rem 2.75rem 1.625rem 2.75rem;
-    border: 1px solid #594cda;
-    border-radius: 32px;
-    background-color: #594cda;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 0.875rem;
-    line-height: 0;
-    text-decoration: none;
-    transition: all 0.2s;
-    margin-right: 0.25rem;
-    margin-bottom: 1.25rem;
-    margin-left: 0.25rem;
-}
-
-.btn-solid-lg:hover {
-    border: 1px solid #594cda;
-    background-color: transparent;
-    color: #594cda; /* needs to stay here because of the color property of a tag */
-    text-decoration: none;
-}
-
-.btn-solid-lg .fab {
-    margin-right: 0.5rem;
-    font-size: 1.25rem;
-    line-height: 0;
-    vertical-align: top;
-}
-
-    /* Min-width 1280px */
-@media (min-width: 1280px) {
-    /* General Styles */
-    .h1-large {
-        font-size: 3.125rem;
-        line-height: 3.75rem;
-    }
-
-    .container {
-        max-width: 72rem;
-    }
-}
-
-    @media (min-width: 1024px) {
-        /* Navigation */
-    .navbar {
-        background-color: transparent;
-        flex-wrap: nowrap;
-        justify-content: start;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 1.75rem;
-    }
-
-    .navbar-collapse {
-        flex-basis: auto;
-    }
-
-    .navbar.top-nav-collapse {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        background-color: #f1f9fc;
-    }
-
-    .offcanvas-collapse {
-        position: static;
-        top: auto;
-        bottom: auto;
-        left: auto;
-        width: auto;
-        padding-right: 0;
-        padding-left: 0;
-        background-color: transparent;
-        overflow-y: visible;
-        visibility: visible;
-    }
-
-    .offcanvas-collapse.open {
-        -webkit-transform: none;
-        transform: none;
-    }
-
-    .nav-link {
-        padding-right: 0.625rem;
-        padding-left: 0.625rem;
-    }
-
-    .dropdown-menu {
-        position: absolute;
-        margin-top: 0.25rem;
-        box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.05);
-    }
-
-    .dropdown-divider {
-        width: 90%;
-    }
-
-    /* end of navigation */
-    }
-        </style>
     </head>
     <body data-spy="scroll" data-target=".fixed-top">
         <!-- <div class="navbar">
@@ -184,12 +34,12 @@ h1 {
     <div class="container sm:px-4 lg:px-8 flex flex-wrap items-center justify-between lg:flex-nowrap">
         
         <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Algokart</a>
+        <!-- <a class="text-gray-800 font-semibold text-3xl leading-4 no-underline page-scroll" href="index.html">Algokart</a> -->
 
         <!-- Image Logo -->
-        <!-- <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
-            <img src="logo.png" alt="alternative" class="h-8" />
-        </a> -->
+        <a class="inline-block mr-4 py-0.5 text-xl whitespace-nowrap hover:no-underline focus:no-underline" href="index.html">
+            <img style="width: 150px; height: 100px;" src="algokart-transformed.png" alt="alternative" class="h-8" />
+        </a>
 
         <button class="background-transparent rounded text-xl leading-none hover:no-underline focus:no-underline lg:hidden lg:text-gray-400" type="button" data-toggle="offcanvas">
             <span class="navbar-toggler-icon inline-block w-8 h-8 align-middle"></span>
@@ -201,14 +51,15 @@ h1 {
                     <a class="nav-link page-scroll active" href="#header">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="#features">Features</a>
+                    <a class="nav-link page-scroll" href="#download">Contact</a>
                 </li>
                 <li>
-                    <a class="nav-link page-scroll" href="#details">Details</a>
+                    <a class="nav-link page-scroll" href="#details">About</a>
                 </li>
+                <!-- 
                 <li>
                     <a class="nav-link page-scroll" href="#pricing">Pricing</a>
-                </li>
+                </li> -->
             </ul>
         </div> <!-- end of navbar-collapse -->
     </div> <!-- end of container -->
@@ -229,23 +80,69 @@ h1 {
 </header> <!-- end of header -->
 <!-- end of header -->
 
+<!-- Features -->
+<div id="download" class="cards-1">
+    <div class="container px-4 sm:px-8 xl:px-4">
+
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="icons8-mail-240.png" alt="alternative" />
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Email Address</h5>
+                <p class="mb-4">patelpoojan145@gmail.com</p>
+            </div>
+        </div>
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="icons8-phone-240.png" alt="alternative" />
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Phone Number</h5>
+                <p class="mb-4">+91 9664864349</p>
+            </div>
+        </div>
+        <!-- end of card -->
+
+        <!-- Card -->
+        <div class="card">
+            <div class="card-image">
+                <img src="icons8-place-marker-96.png" alt="alternative" />
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Office Address</h5>
+                <p class="mb-4">7 / ASHTVINAYAK TENAMENTS, DEESA HIGHWAY,  PATAN, Gujarat, India 384265</p>
+            </div>
+        </div>
+        <!-- end of card -->
+
+    </div> <!-- end of container -->
+</div> <!-- end of cards-1 -->
+<!-- end of features -->
+
+<!-- Details 1 -->
+<div id="details" class="pt-12 pb-16 lg:pt-16">
+    <div class="container px-4 sm:px-8 lg:grid lg:grid-cols-12 lg:gap-x-12">
+        <div class="lg:col-span-5">
+            <div class="mb-16 lg:mb-0 xl:mt-16">
+                <h2 class="mb-6">Results driven ground breaking technology</h2>
+                <p class="mb-4">Based on our team's extensive experience in developing line of business applications and constructive customer feedback we reached a new level of revenue.</p>
+                <p class="mb-4">We enjoy helping small and medium sized tech businesses take a shot at established Fortune 500 companies</p>
+            </div>
+        </div> <!-- end of col -->
+        <div class="lg:col-span-7">
+            <div class="xl:ml-14">
+                <img class="inline" src="images/details-1.jpg" alt="alternative" />
+            </div>
+        </div> <!-- end of col -->
+    </div> <!-- end of container -->
+</div>
+<!-- end of details 1 -->
+
  
-  
-        <!-- <div class="">
-            <div class="heading1">
-                Finance on your fingertips
-            </div>
-            
-            <div>
-                <button class="start-button">
-                    <span class="button-text">Lets Get Started</span>
-                </button>
-            </div>
-            <div>
-                <img class="side-image" src="side_image.png">
-            </div>
-        </div> -->
-        
-        <!-- <script src="" async defer></script> -->
     </body>
 </html>
