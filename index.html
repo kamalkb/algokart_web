@@ -71,8 +71,37 @@
         <div class="mb-16 lg:mt-32 xl:mt-40 xl:mr-12">
             <h1 class="h1-large mb-5">Finance on your fingertips</h1>
             <p class="p-large mb-8">Start getting things done together with your team based on Algokart's revolutionary features</p>
-            <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>Lets Get Started</a>
+            <button type="button" style="border: 1px solid #3ABDB7;background-color: #3ABDB7;" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-bs-toggle="modal" data-bs-target="#exampleModalCenter" onclick="toggleModal('modal-id')">
+                Lets Get Started
+              </button>
+            <!-- <button data-modal-target="staticModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"  type="button" data-modal-show="staticModal"><i class="fab fa-apple"></i>Lets Get Started</button> -->
         </div>
+          <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+            <div class="relative w-auto my-6 mx-auto max-w-2xl">
+              <!--content-->
+              <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                <!--header-->
+                <div class="flex items-start justify-between p-5 rounded-t">
+                  <img src="coming_soon.jpg" style="width: 93%;">
+                  <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" onclick="toggleModal('modal-id')">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
+                  </button>
+                </div>
+                <!--body-->
+                <div class="relative p-6 flex-auto" style="text-align: center;">
+                    <h3 class="text-3xl font-semibold" style="color: #3ABDB7;">
+                        Coders At Work
+                    </h3>
+                    <p>Get ready for strategies with unbelivable returns</p>
+                  <p class="my-4 text-slate-500 text-lg leading-relaxed">
+                    -Coming Soon-
+                  </p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
         <div class="xl:text-right">
             <img class="inline" src="side_image.png" alt="alternative" />
         </div>
@@ -116,7 +145,7 @@
             </div>
             <div class="card-body">
                 <h5 class="card-title">Office Address</h5>
-                <p class="mb-4">7 / ASHTVINAYAK TENAMENTS, DEESA HIGHWAY,  PATAN, Gujarat, India 384265</p>
+                <p class="mb-4">Currently we are not having physical office yet, will open up shortly</p>
             </div>
         </div>
         <!-- end of card -->
@@ -144,6 +173,14 @@
 </div>
 <!-- end of details 1 -->
 
+<script type="text/javascript">
+    function toggleModal(modalID){
+      document.getElementById(modalID).classList.toggle("hidden");
+      document.getElementById(modalID + "-backdrop").classList.toggle("hidden");
+      document.getElementById(modalID).classList.toggle("flex");
+      document.getElementById(modalID + "-backdrop").classList.toggle("flex");
+    }
+  </script>
  
     </body>
 </html>
